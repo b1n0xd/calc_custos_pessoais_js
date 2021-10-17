@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+</head>
+<body>
+    <title> Calculadora de Salário e despesas</title>
+    <script type="text/javascript">
+        agua = 40
+        luz = 50
+        internet = 80
+        cursos = 97
+        mercado = 800
+        aluguel = 1200
+        var primeiroPag = parseInt(prompt("Insira o valor seu primeiro pagamento:"));
+        var segundoPag = parseInt(prompt("Insira o valor do seu segundo pagamento:"));
+        var salarioTotal = (primeiroPag = segundoPag);
+        var despesas = (agua + luz + internet + cursos + mercado + aluguel);
+        var resultado = salarioTotal - despesas
+        invest = (resultado * 30) / 100;
+        sobra = resultado - invest
+
+        if(resultado < 0 ){
+            alert("Infelizmente não sobrou dinheiro, é preciso investir melhor!")
+        }
+        else{
+            alert("Parabéns, vamos investir " + invest + " reais" + " ,sobrou para diversão " + sobra + " reais." );
+        }
+    </script>
+    
+</body>
+</html>
